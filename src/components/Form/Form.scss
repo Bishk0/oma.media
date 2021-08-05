@@ -1,0 +1,187 @@
+.title {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 30px;
+  margin: 0 0 20px 0;
+  color: #181c43;
+}
+
+.title,
+.text-after-form {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 275px;
+  padding: 23px 22px 18px 22px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 40px;
+
+  .form-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+
+  label {
+    padding: 0 18px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #000, 80%;
+  }
+
+  input {
+    position: relative;
+    padding: 0 18px;
+    height: 36px;
+    background-color: #f3f3fa;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #000, 80%;
+    outline: none;
+  }
+
+  .submit-btn {
+    height: 48px;
+    margin-top: 15px;
+    background-color: #1e1a3e;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  .error-input {
+    background: #ffe0e6;
+  }
+
+  .error {
+    position: absolute;
+    bottom: -20px;
+    padding: 0 18px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 20px;
+    color: red;
+  }
+
+  .togglePass {
+    position: absolute;
+    right: 7px;
+    bottom: 7px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+  }
+
+  .togglePass-position {
+    bottom: 5px;
+  }
+
+  .password {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tooltip {
+    padding-right: 18px;
+  }
+
+  .password {
+    position: relative;
+   }
+   .password::after {
+    content: 'Password must contain 8+ symbols, 1 special and 2 capital letters';
+    position: absolute;
+    z-index: 1;
+    top: -45px;
+    right: 0;
+    width: 175px;
+    padding: 7px 11px 5px;
+    border-radius: 8px;
+    background: #1e1a3e;
+    color: #fff;
+    pointer-events: none;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -0.4;
+    text-align: center;
+    opacity: 0;
+   } 
+
+   .password::before {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: -12px;
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    background: #1e1a3e;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+
+   .password:hover::after,
+   .password:hover::before {
+    opacity: 1;
+   }
+}
+
+
+
+.text-after-form,
+.link {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #1e1a3e;
+}
+
+.link-btn {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.link {
+  border-bottom: 1px solid #1e1a3e;
+}
+
+.error-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 17px 13px 46px;
+  margin-top: 139px;
+  background: #ff6683;
+  border-radius: 50px;
+  
+  span,
+  button {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
+
+}
